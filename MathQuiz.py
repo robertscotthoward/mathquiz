@@ -197,6 +197,11 @@ def main():
         elif op == "M":
             prompt = "\n{0:<20}: {1:>3} X {2:>3} = ".format(pre, x, y)
             answer = x * y
+        elif op == "W":
+            xx = "0,1,2,3,4,5,6,7,8,9,10,J,Q,K,A".split(',')[x]
+            yy = "0,1,2,3,4,5,6,7,8,9,10,J,Q,K,A".split(',')[y]
+            prompt = "\n{0:<20}: {1:>3} X {2:>3} = ".format(pre, xx, yy)
+            answer = x * y
         elif op == "D":
             prompt = "\n{0:<20}: {1:>3} / {2:>3} = ".format(pre, x * y, x)
             answer = y
@@ -336,6 +341,7 @@ if __name__ == "__main__":
   (A)ddition
   (S)ubtraction
   (M)ultiplication
+  Card (W)ar
   (D)ivision
   (/) Division with fractions
   (F)actors; e.g. 12 = "2 2 3"
@@ -368,18 +374,18 @@ if __name__ == "__main__":
             if "!" in ops:
                 test = True
             if "*" in ops:
-                ops = ops.replace("*","ASMDF")
+                ops = ops.replace("*","ASMWDF")
             if "@" in ops:
                 onlymax = True
             loop = False
 
-            ops= re.sub("[^ASMDFN/]", "", ops)
+            ops= re.sub("[^ASMWDFN/]", "", ops)
             for op in ops:
                 if op == "N":
                     negatives = True
                     ops = ops.replace("N","")
                     continue
-                if not op in ["A","S","M","D","F","/"]:
+                if not op in ["A","S","M","W","D","F","/"]:
                     loop = True
                     break
                 

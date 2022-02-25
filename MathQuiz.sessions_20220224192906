@@ -1,20 +1,11 @@
 {
     "sessions": [
         {
-            "money": 0.0,
             "name": "Dagny",
-            "right": 0,
-            "score": 0,
+            "right": 1,
+            "score": 3,
             "type": "M3,4",
             "when": "20220224182748",
-            "wrong": 0
-        },
-        {
-            "name": "Dagny",
-            "right": 2,
-            "score": 8,
-            "type": "W",
-            "when": "20220224192906",
             "wrong": 0
         }
     ],

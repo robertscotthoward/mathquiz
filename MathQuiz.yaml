@@ -12,6 +12,12 @@ operators:
       abbr: M
       difficulty: 3
 
+    - name: Math Wars
+      abbr: W
+      difficulty: 4
+      lo: 2
+      hi: 14
+
     - name: Division
       abbr: D
       difficulty: 4
