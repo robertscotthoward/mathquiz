@@ -294,8 +294,8 @@ Name                 Type       Right Wrong Score         Dollars When
       #user["money"] += session.get("money",0)
       user["when"] = max(user.get("when",""), session.get("when",""))
 
-    for i, (name, user) in enumerate(sorted(users.items(), key=lambda x,y: x[0] < y[0])):
-        ss = user
+    for i, k in enumerate(sorted(users)):
+        ss = users[k]
         ss['money'] = ss['score'] / 1000.0
         if not 'when' in ss: ss['when'] = ''
         print("{name:<20} {type:<10} {right:>5d} {wrong:>5d} {score:>10,d} {money:>10,.2f} {when:<14}".format(**ss))
