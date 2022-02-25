@@ -177,7 +177,11 @@ def main():
                         for r in range(1 if "F" in ops else 0, y):
                             cards.append((op,x,(y, r), points))
                     else:
-                        cards.append((op,x,y,points))
+                        if op == 'W':
+                            if x > 10 or y > 10:
+                                cards.append((op,x,y,points))
+                        else:
+                          cards.append((op,x,y,points))
 
     # Start showing the cards
     print("Enter (Q) to quit and see your score")
