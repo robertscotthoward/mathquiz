@@ -320,7 +320,7 @@ if __name__ == "__main__":
         config = {'sessions': []}
 
     with open(YAML_FILENAME, 'r') as f:
-        yaml = yaml.load(f)
+        yaml = yaml.safe_load(f)
 
     while True:
         name = Authenticate()
