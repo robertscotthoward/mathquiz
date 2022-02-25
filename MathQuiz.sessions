@@ -1,0 +1,18 @@
+{
+    "sessions": [
+        {
+            "name": "Dagny",
+            "right": 1,
+            "score": 3,
+            "type": "M3,4",
+            "when": "20220224182748",
+            "wrong": 0
+        }
+    ],
+    "users": [
+        {
+            "abbr": "D",
+            "name": "Dagny"
+        }
+    ]
+}

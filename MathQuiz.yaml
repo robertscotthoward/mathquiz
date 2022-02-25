@@ -1,0 +1,46 @@
+operators:
+    - name: Addition
+      abbr: A
+      difficulty: 1
+      lo: 1
+
+    - name: Subtraction
+      abbr: S
+      difficulty: 2
+
+    - name: Multiplication
+      abbr: M
+      difficulty: 3
+
+    - name: Division
+      abbr: D
+      difficulty: 4
+
+    - name: Fractions
+      abbr: /
+      difficulty: 5
+
+    - name: Factors
+      abbr: F
+      difficulty: 6
+
+    - name: Negatives
+      abbr: "-"
+      difficulty: 1
+
+people:
+    - name: Dagny
+      abbr: D
+    - name: Robbie
+      abbr: R
+    - name: Genny
+      abbr: G
+    - name: Tommy
+      abbr: T
+    - name: Daddy
+      abbr: F
+    - name: Mommy
+      abbr: M
+    - name: Anonymous
+      abbr: X
+
